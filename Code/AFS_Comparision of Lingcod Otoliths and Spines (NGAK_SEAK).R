@@ -35,13 +35,13 @@ library(ggplot2)
 
 library(readxl) #For data in Excel spreadsheets
 
-SEAK <- read_excel("AFS/Data/100 Lingcod SEAK Fin Spine Ford and ADU spine then Otos aged by ADU.xlsx", 
+SEAK <- read_excel("G:\\ZZ Hinds\\R\\AFS\\100 Lingcod SEAK Fin Spine Ford and ADU spine then Otos aged by ADU.xlsx", 
                    sheet = "Raw Data")
 
-NGAK <- read_excel("AFS/Data/326 Lingcod NGAK Oto ADU and spines GOAB - Copy.xlsx", 
+NGAK <- read_excel("G:\\ZZ Hinds\\R\\AFS\\326 Lingcod NGAK Oto ADU and spines GOAB - Copy.xlsx", 
                    sheet = "Lingod Fin and Oto from Martin ")
 
-Published_Agree_CV <- read_excel("AFS/Data/Delsa raw data ape cv.xlsx")
+Published_Agree_CV <- read_excel("G:\\ZZ Hinds\\R\\AFS\\Delsa raw data ape cv.xlsx")
 
 #UPLOAD DATA ANOTHER WAY:
 
@@ -164,7 +164,7 @@ ggplot(data = Published_Agree_CV, aes(x = CV)) +
 
 #install.packages("ggplot2") #should already be installed
 
-library(ggplot2)
+#library(ggplot2)
 ####+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #SEAK: GOAB Spine vs SEAK Oto
 
@@ -176,7 +176,7 @@ SEAK$Bias<-SEAK$GOABSpine-SEAK$SEAKOtolith      #this calculates the bias.
 ggplot(SEAK,aes(Bias))+                           #makes a bar graph of the showing bias data
   geom_bar()
 
-?geom_bar()                                       #? asks for help with a function
+#?geom_bar()                                       #? asks for help with a function
 
 
 ggplot(SEAK,aes(Bias))+                           #turned this from a bar graph to a squiggly line histogram
