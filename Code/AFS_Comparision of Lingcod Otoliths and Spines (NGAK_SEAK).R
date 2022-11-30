@@ -15,7 +15,7 @@
 
 #INSTALL PACKAGES/LIBRARY:####
 
-getwd() #Working directory for this project is here. All data and projects should be saved here G:/ZZ Hinds/R
+#getwd() #Working directory for this project is here. All data and projects should be saved here G:/ZZ Hinds/R
 
 #install.packages("readxl") should already be installed
 #install.packages("FSA") should already be installed
@@ -26,7 +26,7 @@ library(FSA) #FSA package runs the bias plot functions. Takes time to load. Migh
 library(tidyverse) #contains ggplot
 library(ggplot2)
 
-.libPaths() #Checks where your libraries are being stored if needed.Put it here C:/R/R-4.1.2/library
+#.libPaths() #Checks where your libraries are being stored if needed.Put it here C:/R/R-4.1.2/library
 
 ####++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -45,8 +45,8 @@ Published_Agree_CV <- read_excel("AFS/Data/Delsa raw data ape cv.xlsx")
 
 #UPLOAD DATA ANOTHER WAY:
 
-library(readr) #For data in csv formats
-read_csv  #Use read_csv and not read.csv. This is important. Replace read_excel above with read_csv
+#library(readr) #For data in csv formats
+#read_csv  #Use read_csv and not read.csv. This is important. Replace read_excel above with read_csv
 
 ####++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -162,7 +162,7 @@ ggplot(data = Published_Agree_CV, aes(x = CV)) +
 
 #DENSITY PLOT WITH MEAN LINE (HISTOGRAM SHOWING BIAS):####
 
-install.packages("ggplot2") #should already be installed
+#install.packages("ggplot2") #should already be installed
 
 library(ggplot2)
 ####+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
